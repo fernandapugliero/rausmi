@@ -25,7 +25,9 @@ jobs:
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           BASE_ID: ${{ secrets.BASE_ID }}
-          TABLE_NAME: ${{ secrets.TABLE_NAME }}
+          EVENTS_TABLE: ${{ secrets.EVENTS_TABLE }}
+          VENUES_TABLE: ${{ secrets.VENUES_TABLE }}
+          VIEW_NAME: ${{ secrets.VIEW_NAME }}
 
       - run: |
           git config user.name "github-actions"
